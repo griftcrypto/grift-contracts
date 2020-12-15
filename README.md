@@ -1,0 +1,1 @@
+Copyright © 2020 grift.finance. ALL RIGHTS RESERVED.
