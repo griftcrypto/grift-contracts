@@ -1,0 +1,8 @@
+node_modules
+truffle-config.js
+package.json
+package-lock.json
+test
+migrations
+build
+contracts/FlatGRIFT.sol
