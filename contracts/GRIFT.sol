@@ -55,7 +55,7 @@ contract GRIFT is Context, IERC20, Ownable {
     function rewardPerTrader() public view returns (uint256) {
         uint256 _numberOfTraders = numberOfTraders();
         if (_numberOfTraders != uint256(0)) {
-            return balanceOf(_rewardAddress).div(_numberOfTraders);
+            return balanceOf(_rewardAddress).div(_numberOfTraders).div(uint256(10));
         } else {
             return balanceOf(_rewardAddress);
         }
