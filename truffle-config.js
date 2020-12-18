@@ -45,6 +45,7 @@ module.exports = {
       network_id: 42
     }*/
     "ropsten-infura": {
+    }
   },
 
   // Set default mocha options here, use special reporters etc.
