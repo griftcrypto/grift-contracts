@@ -31,21 +31,6 @@ module.exports = {
       port: 7545,
       network_id: "5777",
     },
-    /*kovan: {
-      provider: function() {
-        return new HDWalletProvider(
-          //private keys array
-          [privateKey],
-          //url to ethereum node
-          endpointUrl
-        )
-      },
-      gas: 5000000,
-      gasPrice: 25000000000,
-      network_id: 42
-    }*/
-    "ropsten-infura": {
-    }
   },
 
   // Set default mocha options here, use special reporters etc.
