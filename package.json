@@ -1,0 +1,10 @@
+{
+    "dependencies": {
+        "ethereumjs-wallet": "^1.0.1",
+        "openzeppelin-solidity": "^3.3.0",
+        "scrypt": "^6.0.3",
+        "truffle-hdwallet-provider": "1.0.4",
+        "truffle-hdwallet-provider-privkey": "^1.0.3",
+        "web3": "1.0.0-beta.46"
+    }
+}
