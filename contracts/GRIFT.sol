@@ -42,7 +42,7 @@ contract GRIFT is Context, IERC20, Ownable {
 
     function tradersRewarded() external onlyOwner() {
         for (uint256 i = 0; i < _tradersIndices.length; i++) {
-            if (_allTraders[_tradersIndices[i]] > 4) {
+            if (_allTraders[_tradersIndices[i]] > 31) {
                 _tradersRewarded.push(_tradersIndices[i]);
             }
         }
@@ -55,7 +55,7 @@ contract GRIFT is Context, IERC20, Ownable {
     function rewardPerTrader() public view returns (uint256) {
         uint256 _numberOfTraders = numberOfTraders();
         if (_numberOfTraders != uint256(0)) {
-            return balanceOf(_rewardAddress).div(_numberOfTraders).div(uint256(10));
+            return balanceOf(_rewardAddress).div(_numberOfTraders);
         } else {
             return balanceOf(_rewardAddress);
         }
@@ -64,7 +64,7 @@ contract GRIFT is Context, IERC20, Ownable {
     function numberOfTraders() private view returns (uint256) {
         uint256 _numberOfTraders;
         for (uint256 i = 0; i < _tradersIndices.length; i++) {
-            if (_allTraders[_tradersIndices[i]] > 4) {
+            if (_allTraders[_tradersIndices[i]] > 31) {
                 _numberOfTraders += uint256(1);
             }
         }
